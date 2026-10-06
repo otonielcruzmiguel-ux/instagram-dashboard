@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Instagram Growth Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <p class="eyebrow">INSTAGRAM DASHBOARD</p>
+      <h1>Consulta tu perfil y métricas</h1>
+      <p>Frontend listo para GitHub Pages. La conexión real se realiza a través de tu backend para mantener el token privado.</p>
+    </section>
+    <section class="card">
+      <label for="backendUrl">URL de tu backend</label>
+      <input id="backendUrl" placeholder="https://tu-backend.example.com" />
+      <div class="actions"><button id="saveBtn">Guardar</button><button id="loadBtn" class="secondary">Cargar perfil</button></div>
+      <p id="status" class="status">Configura primero la URL del backend.</p>
+    </section>
+    <section id="profile" class="card hidden">
+      <div class="profile-head"><div><p class="eyebrow">CUENTA CONECTADA</p><h2 id="username">@usuario</h2></div><span id="accountType" class="pill">Instagram</span></div>
+      <div class="stats"><article><span>Seguidores</span><strong id="followers">—</strong></article><article><span>Siguiendo</span><strong id="following">—</strong></article><article><span>Publicaciones</span><strong id="mediaCount">—</strong></article></div>
+      <p class="fineprint">Este panel consulta información autorizada. No crea seguidores ni automatiza cuentas para inflar métricas.</p>
+    </section>
+  </main><script src="script.js"></script>
+</body></html>
